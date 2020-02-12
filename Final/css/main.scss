@@ -1,0 +1,183 @@
+body, html  {
+    height: 100%;
+}
+// this makes so that the header or the menu buttons stay fixed on the entire website when its scrolled
+header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 2;
+ }
+
+//  Controls the look of the hyperlink inside the div "button"
+.link {
+  display: block;
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  
+}
+// General look of the menu buttons and animation
+.headerb {
+  transition: transform 1s;
+  transition: 0.3s;
+  background-color: rgb(71, 71, 71);
+  &:hover {
+          transform: translateY(10px);
+          text-shadow: 1px 1px 1px #aaaaaa;
+  }
+
+  text-align: center;
+  width: 180px;
+
+}
+
+//  Here we have the general settigs for the whole html body.  Fonts, text color, background image and the position of the elements since i wanted everything to be centered if you zoom in and out.
+body    {
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 20px;
+    background-image: url(../resource/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+}
+//  I wanted a little more space from the top of the page
+h1  {
+    margin: 5rem;
+    text-align: center;
+    margin-top: 200px;
+}
+// Here i dictated how the cards will work and what position they will take. I went for the easy way for them to do it automaticly.
+main, header   {
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    // the text above shows the other use of display grid instead of flex and they give similar results. Only drawback is that you cant really control the position of the grids  
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+
+
+}
+// Class i created so that the text i wanted will be in the middle of the card
+.strong {
+    text-align: center;
+}
+
+// Here is the card class and its settigs. I put a little effects on top hoping ill get little better grade :)
+.card, .wrap {
+    transition: transform 1s;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: rgb(71, 71, 71);
+    opacity: 0.94;
+    &:hover {
+            transform: translateY(-10px);
+            text-shadow: 1px 1px 1px #aaaaaa;
+    }
+
+    text-align: center;
+    width: 300PX;
+    height: 100%;
+  
+}
+
+.h1 {
+    color: #464646;
+    font-size: 50px;
+}
+// The settigs so it alligns nicely 
+*   {
+    box-sizing: border-box;
+}
+  // General settigs of the text boxes  
+    
+  input[type=text], select, textarea {
+      width: 100%;
+      height: 100%;
+      padding: 0px;
+      margin-top: 6px;
+      resize: vertical;
+      outline: none;
+      border: none;
+      color: white;
+      background-color:#464646 ;
+      font-size: large;
+      border-bottom: 2px solid black;
+      
+    }
+
+
+
+ // The normal color of the Submit button when its idle
+  .gbutton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 32px 60px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    align-content: center;
+    &:hover {
+      background-color: #45a049;
+
+    }
+  }
+
+  .container {
+    border-radius: 5px;
+    background-color: #464646;
+    padding: 35px;
+    opacity: 0.94;
+    margin: 5rem;
+    outline: none;
+  }
+  
+//   The footer jpg position
+  .column {     
+    float: right;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    position: relative;
+    border: none;
+    background-color: #464646;
+     
+  }
+  // The grey box in the footer
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    border: none;
+  }
+
+
+.imgg  {
+    width: 18.75rem; height: 25rem;
+}
+
+main  {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  padding-top: 5rem;
+}
+
+.wrap .content {
+  display: none;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  right: 5%;
+  background-color: #464646;
+  padding: .5em;
+}
+.wrap:hover .content {
+  display: block;
+}
