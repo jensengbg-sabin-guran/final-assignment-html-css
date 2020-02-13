@@ -1,13 +1,6 @@
 body, html  {
     height: 100%;
 }
-// this makes so that the header or the menu buttons stay fixed on the entire website when its scrolled
-header {
-   position: fixed;
-   top: 0;
-   width: 100%;
-   z-index: 2;
- }
 
 //  Controls the look of the hyperlink inside the div "button"
 .link {
@@ -51,19 +44,28 @@ h1  {
     text-align: center;
     margin-top: 200px;
 }
-// Here i dictated how the cards will work and what position they will take. I went for the easy way for them to do it automaticly.
-main, header   {
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
-    // the text above shows the other use of display grid instead of flex and they give similar results. Only drawback is that you cant really control the position of the grids  
+
+header  {
     display: flex;
     cursor: pointer;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     border-radius: 25px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
 
-
+// Here i dictated how the cards will work and what position they will take. I went for the easy way for them to do it automaticly.
+main  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
 }
 // Class i created so that the text i wanted will be in the middle of the card
 .strong {
@@ -82,14 +84,11 @@ main, header   {
             text-shadow: 1px 1px 1px #aaaaaa;
     }
 
-    text-align: center;
-    width: 300PX;
-    height: 100%;
-  
+    text-align: center;  
 }
 
 .h1 {
-    color: #464646;
+    color: white;
     font-size: 50px;
 }
 // The settigs so it alligns nicely 
