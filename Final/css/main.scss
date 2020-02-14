@@ -11,14 +11,15 @@ body, html  {
 }
 // General look of the menu buttons and animation
 .headerb {
+  padding: 20px;
   transition: transform 1s;
   transition: 0.3s;
   background-color: rgb(71, 71, 71);
   text-align: center;
   width: 180px;
   &:hover {
-          transform: translateY(10px);
-          text-shadow: 1px 1px 1px #aaaaaa;
+          transform: scale(1.2);
+          transform: ;
   }
 
 
@@ -38,7 +39,7 @@ body    {
     background-color: #464646;
 }
 //  I wanted a little more space from the top of the page
-h1  {
+h1  { 
     margin: 5rem;
     text-align: center;
     margin-top: 200px;

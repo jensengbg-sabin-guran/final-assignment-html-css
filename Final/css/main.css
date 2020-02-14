@@ -9,6 +9,7 @@ body, html {
 }
 
 .headerb {
+  padding: 20px;
   -webkit-transition: -webkit-transform 1s;
   transition: -webkit-transform 1s;
   transition: transform 1s;
@@ -21,9 +22,8 @@ body, html {
 }
 
 .headerb:hover {
-  -webkit-transform: translateY(10px);
-          transform: translateY(10px);
-  text-shadow: 1px 1px 1px #aaaaaa;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 body {
