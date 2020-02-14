@@ -5,7 +5,6 @@ body, html  {
 //  Controls the look of the hyperlink inside the div "button"
 .link {
   display: block;
-  padding: 20px;
   color: white;
   text-decoration: none;
   
@@ -15,13 +14,13 @@ body, html  {
   transition: transform 1s;
   transition: 0.3s;
   background-color: rgb(71, 71, 71);
+  text-align: center;
+  width: 180px;
   &:hover {
           transform: translateY(10px);
           text-shadow: 1px 1px 1px #aaaaaa;
   }
 
-  text-align: center;
-  width: 180px;
 
 }
 
@@ -52,7 +51,6 @@ header  {
     align-items: center;
     flex-wrap: wrap;
     border-radius: 25px;
-    position: fixed;
     top: 0;
     width: 100%;
     z-index: 2;
@@ -116,6 +114,8 @@ main  {
 
  // The normal color of the Submit button when its idle
   .gbutton {
+    display: block;
+    text-decoration: none;
     background-color: #4CAF50;
     color: white;
     padding: 32px 60px;
@@ -138,24 +138,8 @@ main  {
     outline: none;
   }
   
-//   The footer jpg position
-  .column {     
-    float: right;
-    width: 50%;
-    margin-top: 6px;
-    padding: 20px;
-    position: relative;
-    border: none;
-    background-color: #464646;
-     
-  }
-  // The grey box in the footer
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    border: none;
-  }
+
+
 
 
 .imgg  {
@@ -163,8 +147,8 @@ main  {
 }
 
 main  {
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
   padding-top: 5rem;
 }
 
